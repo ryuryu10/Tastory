@@ -69,11 +69,11 @@ nav .bottom .nav-container .nav-items {
   padding: 0.5em 1em 0.5em 1em;
   color: #ff6f6f;
   font-weight: bold;
+  transition: all 0.4s;
 }
 nav .bottom .nav-container .nav-items:hover {
   background-color: #ff6f6f;
   color: white;
-  transition: all 0.4s;
 }
 
 .Quest_View .Title {
@@ -131,10 +131,10 @@ nav .bottom .nav-container .nav-items:hover {
   background: #db5d5d;
   border-radius: 5px;
   color: white;
+  transition: all 0.3s;
 }
 .Quest_View .bookbox .AREA_Book .ActionButton i:hover {
   background: #8c3c3c;
-  transition: all 0.3s;
 }
 .Quest_View .bookbox .AREA_Book .ActionButton i:active {
   background: #562424;
@@ -244,6 +244,41 @@ nav .bottom .nav-container .nav-items:hover {
 }
 .Library_View .WrittedReview {
   border-top: 2px solid #ff6f6f;
+  display: flex;
+}
+.Library_View .WrittedReview .BookGruop {
+  margin: 2%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.Library_View .WrittedReview .BookGruop:hover {
+  background: #eeeeee;
+}
+.Library_View .WrittedReview .BookGruop img {
+  width: 10vw;
+}
+.Library_View .WrittedReview .BookGruop .BookTitle {
+  padding: 1.3em 0 0.5em 0;
+  font-size: 0.9em;
+  width: 10vw;
+  display: block;
+  white-space: nowrap;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Library_View .WrittedReview .BookGruop .BookAuthor, .Library_View .WrittedReview .BookGruop .BookPublisher {
+  font-size: 0.75em;
+  color: #979797;
+  width: 9vw;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 768px) {

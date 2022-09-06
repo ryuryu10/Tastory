@@ -14,9 +14,12 @@
     </div>
     <div class="WrittedReview">
         {% for Detail in review_book_list %}
-        <div onclick="location.href='/review/{{Detail.review.review_id}}/'" style="cursor:hand">
+        <div class="BookGruop" onclick="location.href='/review/{{Detail.review.review_id}}/'" style="cursor:hand">
             <img class="justify-content-center" src="{{Detail.book.img_url}}">
-            <p>{{Detail.book.title}}</p>
+            <div class="BookTitle">{{Detail.book.title}}</div>
+            <div class="BookAuthor">{{Detail.book.author}}</div>
+            <div class="BookPublisher">{{Detail.book.publisher}}</div>
+            
         </div>
     {% endfor %}
     </div>
