@@ -5,11 +5,27 @@
 {% endblock %}
 {% block content %}
 <div class="Library_View">
-    <div class="container pt-4">
+    <div class="UserInfo">
+        <img src="{{ profile.profile_img.url }}">
+        <div class="UserGroup">
+            <div class="UserName">{{ user.nickname }}</div>
+            <div class="Introduction">{{ profile.introduction }}</div>
+        </div>
+    </div>
+    <div class="WrittedReview">
+        {% for Detail in review_book_list %}
+        <div onclick="location.href='/review/{{Detail.review.review_id}}/'" style="cursor:hand">
+            <img class="justify-content-center" src="{{Detail.book.img_url}}">
+            <p>{{Detail.book.title}}</p>
+        </div>
+    {% endfor %}
+    </div>
+
+    <!-- <div class="container pt-4">
         <div class="flex-row">
             <div class="row justify-content-between align-items-center" style="display: flex;">
                 <div class="col-10 d-flex align-items-center w-auto">
-                    <img src="{{ profile.profile_img.url }}" class="rounded-circle w-auto" style="width: 170px; height:170px">
+                    <img src="{{ profile.profile_img.url }}" style="width: 170px; height:170px">
                     <div class="d-flex w-auto flex-column ps-4">
                         <div class="fs-1 w-auto">{{ user.nickname }}</div>
                         <div class="fs-5 w-auto">{{ profile.introduction }}</div>
@@ -26,6 +42,6 @@
             </div>
             {% endfor %}
         </div>
-    </div>
+    </div> -->
 </div>
 {% endblock %}

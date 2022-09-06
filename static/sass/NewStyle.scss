@@ -231,6 +231,33 @@ nav {
     }
   }
 }
+.Library_View{
+  .UserInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3% 0%;
+    img{
+      @include CircleImage(10vw,10vw);
+    }
+    .UserGroup{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2em;
+      .UserName {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .Introduction {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .WrittedReview {
+    border-top: 2px solid $BASIC_COLOR;
+  }
+}
 
 @media screen and (min-width:576px) {
 }

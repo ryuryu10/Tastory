@@ -218,6 +218,34 @@ nav .bottom .nav-container .nav-items:hover {
   background: linear-gradient(90deg, transparent, white);
 }
 
+.Library_View .UserInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3% 0%;
+}
+.Library_View .UserInfo img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+.Library_View .UserInfo .UserGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2em;
+}
+.Library_View .UserInfo .UserGroup .UserName {
+  font-size: 2em;
+  font-weight: bold;
+}
+.Library_View .UserInfo .UserGroup .Introduction {
+  font-size: 1.2em;
+}
+.Library_View .WrittedReview {
+  border-top: 2px solid #ff6f6f;
+}
+
 @media screen and (min-width: 768px) {
   /* 타블렛 */
 }
