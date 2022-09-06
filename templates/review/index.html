@@ -5,15 +5,44 @@
 {% endblock %}
 {% block content %}
 <div class="Quest_View">
-    <div class="Banner"></div>
-    <div class="BookOfMonth">
-        <div class="Title">이달의 책</div>
-        <div class="AREA_Book">
-            {% for data in books %}
-                <img src="{{ data.img_url }}" onclick="location.href='/book/{{data.book_id}}/'" style="cursor:hand">
-            {% endfor%}
+    <div class="bookbox">
+        <div class="Banner"></div>
+        <div class="BookOfMonth">
+            <div class="Title">이달의 핫한 책</div>
+            <div class="AREA_Book">
+                <div class="LeftActionButton ActionButton">
+                    <i class="bi bi-arrow-bar-left"></i>
+                </div>
+                {% for X in bookGrouping %}
+                    {% for Y in X %}
+                    <div class="BookGroup" id='B{{forloop.counter}}'>
+                        {% for Z in Y %}
+                            <div class="BookInfo">
+                                <img src="{{Z.img_url}}">
+                                <p class="bookname">{{Z.title}}</p>
+                                <p class="bookauthor">{{Z.author}}</p>
+                                <p class="bookpublisher">{{Z.publisher}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                {% endfor %}
+                <div class="RigthActionButton ActionButton">
+                    <i class="bi bi-arrow-bar-right"></i>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        var dump = document.getElementsByClassName('BookGroup');
+        var booklist = []
+        for (var i = 1, n = dump.length+1; i < n; ++i) {
+            if( i >= 2) {
+                document.getElementById(`B${[i]}`).style.display = 'none';
+            }
+            booklist.push(`B${[i]}`);
+        }
+    </script>
     <div class="ReviewOfMonth">
         <div class="Title">이달의 리뷰</div>
         <div class="AREA_Review">

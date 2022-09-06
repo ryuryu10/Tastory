@@ -69,6 +69,7 @@ def edit(request, review_id):
 def main(request):
     books = list(Book.objects.all().values())
     reviews = Review.objects.all()
+    bookGrouping = [[books[i:i+5] for i in range(0, len(books), 5)]]
     user = {}
     profile = {}
     if request.user.is_authenticated:
@@ -86,7 +87,8 @@ def main(request):
         "books": books,
         "review_user_profile_list": review_user_profile_list,
         'user': user,
-        'profile': profile
+        'profile': profile,
+        'bookGrouping' : bookGrouping
     }
     return render(request, 'review/index.html',  context)
 

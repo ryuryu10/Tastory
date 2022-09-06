@@ -1,0 +1,17 @@
+@import './responsive'; 
+ 
+@include mobile{
+    body {
+        background-color: red;
+    }
+}
+@include tablet{
+    body {
+        background-color: aqua;
+    }
+}
+@include desktop{
+    body {
+        background-color: green;
+    }
+}

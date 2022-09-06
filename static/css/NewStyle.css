@@ -1,0 +1,150 @@
+@charset "UTF-8";
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav .header .nav-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ff6f6f;
+}
+nav .header .nav-items {
+  color: white;
+  list-style: none;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  font-size: 0.8em;
+}
+nav .header .nav-items:hover {
+  background-color: white;
+  color: #ff6f6f;
+  transition: all 0.4s;
+}
+nav .Group {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 5% 3% 5%;
+}
+nav .Group .logo {
+  text-decoration: none;
+  color: #ff6f6f;
+  font-size: 2em;
+  font-weight: bold;
+}
+nav .Group .search-area {
+  display: flex;
+  align-items: center;
+}
+nav .Group .search-area .search-box {
+  display: flex;
+  height: 40px;
+}
+nav .Group .search-area .search-box input[type=text] {
+  border: 2px solid #ff6f6f;
+  height: 100%;
+  width: 49vw !important;
+}
+nav .Group .search-area .search-box button {
+  background-color: #ff6f6f;
+  border: none;
+  height: 100%;
+  width: 5vw !important;
+}
+nav .Group .search-area .search-box button i {
+  color: #ffffff;
+}
+nav .bottom .nav-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-bottom: 2px solid #ff6f6f;
+}
+nav .bottom .nav-container .nav-items {
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #ff6f6f;
+  font-weight: bold;
+}
+nav .bottom .nav-container .nav-items:hover {
+  background-color: #ff6f6f;
+  color: white;
+  transition: all 0.4s;
+}
+
+.Quest_View .Title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.Quest_View .bookbox {
+  margin-top: 1em;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 1.5em;
+}
+.Quest_View .bookbox .AREA_Book {
+  display: flex;
+}
+.Quest_View .bookbox .AREA_Book .BookGroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.Quest_View .bookbox .AREA_Book .BookGroup p {
+  margin: 0;
+}
+.Quest_View .bookbox .AREA_Book .BookGroup .bookname {
+  padding: 1.3em 0 0.5em 0;
+  font-size: 0.9em;
+  width: 9vw;
+  display: block;
+  white-space: nowrap;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Quest_View .bookbox .AREA_Book .BookGroup .bookauthor, .Quest_View .bookbox .AREA_Book .BookGroup .bookpublisher {
+  font-size: 0.75em;
+  color: #979797;
+  width: 9vw;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Quest_View .bookbox .AREA_Book .BookGroup img {
+  width: 9vw;
+}
+.Quest_View .bookbox .AREA_Book .ActionButton {
+  display: flex;
+  align-items: center;
+}
+.Quest_View .bookbox .AREA_Book .ActionButton i {
+  font-size: 2em;
+  padding: 0.3em;
+  background: #db5d5d;
+  border-radius: 5px;
+  color: white;
+}
+.Quest_View .bookbox .AREA_Book .ActionButton i:hover {
+  background: #8c3c3c;
+  transition: all 0.3s;
+}
+.Quest_View .bookbox .AREA_Book .ActionButton i:active {
+  background: #562424;
+}
+
+@media screen and (min-width: 768px) {
+  /* 타블렛 */
+}
+@media screen and (min-width: 992px) {
+  /* 데스크탑 */
+}
+@media screen and (min-width: 1200px) {
+  /* 큰 데스크탑 */
+}/*# sourceMappingURL=NewStyle.css.map */

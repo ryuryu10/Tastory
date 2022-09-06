@@ -1,0 +1,165 @@
+$BASIC_COLOR: #ff6f6f;
+
+
+body { 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  .header {
+    .nav-container{
+      display: flex;
+      justify-content: flex-end;
+      background-color: $BASIC_COLOR;
+    }
+    .nav-items{
+      color: white;
+      list-style: none;
+      padding: 0.2em 0.5em 0.2em 0.5em;
+      font-size: 0.8em;
+      &:hover {
+        background-color: white;
+        color: $BASIC_COLOR;
+        transition: all 0.4s;
+      }
+    }
+  }
+  .Group {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5% 3% 5%;
+    .logo {
+      text-decoration: none;
+      color: $BASIC_COLOR;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .search-area {
+      display: flex;
+      align-items: center;
+      .search-box {
+        display: flex;
+        height: 40px;
+        input[type=text] {
+          border: 2px solid $BASIC_COLOR;
+          height: 100%;
+          width: 49vw!important;
+        }
+        button {
+          background-color: $BASIC_COLOR;
+          border: none;
+          height: 100%;
+          width: 5vw!important;
+          i {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .bottom{
+    .nav-container {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      border-bottom: 2px solid $BASIC_COLOR;
+      .nav-items {
+        text-decoration: none;
+        list-style: none;
+        padding: 0.5em 1em 0.5em 1em;
+        color: $BASIC_COLOR;
+        font-weight: bold;
+        &:hover {
+          background-color: $BASIC_COLOR;
+          color: white;
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+}
+
+.Quest_View {
+  .Title {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .bookbox {
+    margin-top: 1em;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 1.5em;
+    .AREA_Book {
+      display: flex;
+      .BookGroup{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        p {
+          margin: 0;
+        }
+        .bookname {
+          padding: 1.3em 0 0.5em 0;
+          font-size: 0.9em;
+          width: 9vw;
+          display: block;
+          white-space: nowrap;
+          font-weight: bold;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .bookauthor,.bookpublisher {
+          font-size: 0.75em;
+          color: #979797;
+          width: 9vw;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        img {
+          width: 9vw;
+        }
+      }
+      .ActionButton {
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 2em;
+          padding: 0.3em;
+          background: #db5d5d;
+          border-radius: 5px;
+          color: white;
+          &:hover {
+            background: #8c3c3c;
+            transition: all 0.3s;
+          }
+          &:active {
+            background: #562424;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width:576px) {
+}
+
+@media screen and (min-width:768px) {
+/* 타블렛 */
+}
+@media screen and (min-width:992px) {
+/* 데스크탑 */
+}
+
+@media screen and (min-width:1200px) {
+/* 큰 데스크탑 */
+}
