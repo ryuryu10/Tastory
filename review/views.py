@@ -79,17 +79,19 @@ def main(request):
     for review in reviews:
         review_user = User.objects.get(user_id=review.user_id)
         review_profile = Profile.objects.get(user_id=review_user.user_id)
+        book_image = Book.objects.get(book_id=review.book_id)
+        print(book_image)
         review_user_profile_match = {
-            'review': review, 'user': review_user, 'profile': review_profile}
+            'review': review, 'user': review_user, 'profile': review_profile,'book_img': book_image}
         review_user_profile_list.append(review_user_profile_match)
 
     context = {
-        "books": books,
         "review_user_profile_list": review_user_profile_list,
         'user': user,
         'profile': profile,
         'bookGrouping' : bookGrouping
     }
+    print(review_user_profile_list)
     return render(request, 'review/index.html',  context)
 
 

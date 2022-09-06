@@ -82,6 +82,7 @@ nav .bottom .nav-container .nav-items:hover {
 }
 .Quest_View .bookbox {
   margin-top: 1em;
+  margin-bottom: 1.5em;
   border: 1px solid #cfcfcf;
   border-radius: 5px;
   padding: 1.5em;
@@ -137,6 +138,84 @@ nav .bottom .nav-container .nav-items:hover {
 }
 .Quest_View .bookbox .AREA_Book .ActionButton i:active {
   background: #562424;
+}
+.Quest_View .ReviewOfMonth {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 1.5em;
+}
+.Quest_View .ReviewOfMonth .AREA_Review {
+  width: 100%;
+  height: 14em;
+  display: flex;
+  overflow-y: auto;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review {
+  margin-top: 1em;
+  margin: 1% 0.5%;
+  flex-shrink: 0;
+  height: 200px;
+  display: flex;
+  max-width: 450px;
+  box-shadow: rgba(67, 71, 85, 0.5411764706) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .BookCover {
+  width: 130px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 90%);
+          mask-image: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 90%);
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP {
+  padding: 0.5em;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP .UserInfo {
+  display: flex;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP .UserInfo img {
+  box-shadow: rgba(9, 30, 66, 0.6196078431) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP .UserInfo .Name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 1em;
+  margin-right: 1em;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP .One_Article {
+  padding-top: 0.5em;
+  width: 300px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP .Full_Article {
+  padding-top: 0.5em;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.Quest_View .ReviewOfMonth .AREA_Review .Review .INFOGRUOP .Full_Article::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1.5em;
+  width: 70%;
+  background: linear-gradient(90deg, transparent, white);
 }
 
 @media screen and (min-width: 768px) {

@@ -44,15 +44,20 @@
         }
     </script>
     <div class="ReviewOfMonth">
-        <div class="Title">이달의 리뷰</div>
+        <div class="Title">따근따끈한 새로운 리뷰</div>
         <div class="AREA_Review">
             {% for Review in review_user_profile_list %}
-                <div class="Review" onclick="location.href='/review/{{Review.review.review_id}}/'"  style="cursor:hand">
-                    <div class="UserInfo">
-                        <div class="Profile"><img src="{{Review.profile.profile_img.url}}"></div>
-                        <div class="Name">{{Review.user.nickname}}</div>
+                <div class="Review" onclick="location.href='/review/{{Review.review.review_id}}/'" style="cursor:hand">
+                    <img class="BookCover" src="{{Review.book_img.img_url}}">
+                    <div class="INFOGRUOP">
+                        <div class="UserInfo">
+                            <div class="Profile"><img src="{{Review.profile.profile_img.url}}"></div>
+                            <div class="Name">{{Review.user.nickname}}</div>
+                        </div>
+                        <div class="One_Article">{{Review.review.title}}</div>
+                        <div class="Full_Article">{{Review.review.content}}</div>
+                        
                     </div>
-                    <div class="Article" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{Review.review.title}}</div>
                 </div>
             {% endfor %}
         </div>
