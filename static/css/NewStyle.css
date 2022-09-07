@@ -281,6 +281,35 @@ nav .bottom .nav-container .nav-items:hover {
   text-overflow: ellipsis;
 }
 
+.Book_Info .BookHeader {
+  justify-content: center;
+  display: flex;
+  margin: 3em 0;
+}
+.Book_Info .BookHeader .BookImage {
+  width: 200px;
+}
+.Book_Info .BookHeader ._Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2em;
+}
+.Book_Info .BookHeader ._Info ._H div:not(._Title) {
+  color: #696969;
+}
+.Book_Info .BookHeader ._Info ._H ._Title {
+  font-size: 2em;
+  font-weight: bold;
+  max-width: 800px;
+}
+.Book_Info .BookHeader ._Info ._B {
+  display: flex;
+}
+.Book_Info .BookHeader ._Info ._B div {
+  margin: 0 1.5%;
+}
+
 @media screen and (min-width: 768px) {
   /* 타블렛 */
 }

@@ -2,7 +2,35 @@
 {% block content %}
 
 <div class="Book_Info">
-    <div class="container px-0">
+    <div class="BookHeader">
+        <img class="BookImage" src="{{ book.img_url }}">
+        <div class="_Info">
+            <div class="_H">
+                <div class="_Title">{{ book.title }}</div>
+                <div class="_Author">{{ book.author }}</div>
+                <div class="_Publisher">{{ book.publisher }}</div>
+            </div>
+            <div class="_B">
+                <div class="heart">
+                    <i class="bi bi-suit-heart-fill"></i>
+                    378
+                </div>
+                <div class="view">
+                    <i class="bi bi-eye-fill"></i>
+                    102
+                </div>
+                <div class="bookmark">
+                    <i class="bi bi-bookmarks-fill"></i>
+                    241
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ReviewName">{{ review_user.nickname }}</div>
+    <div class="ReviewOne">{{ review.title }}</div>
+    <div class="ReviewFull">{{ review.content }}</div>
+    
+    <!-- <div class="container px-0">
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <img src="{{ book.img_url }}"
@@ -52,7 +80,7 @@
             </div>
             <div class="col-sm-12 col-md-1 col-lg-1"></div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 {% endblock %}
