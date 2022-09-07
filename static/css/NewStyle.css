@@ -1,17 +1,16 @@
 @charset "UTF-8";
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 nav {
   display: flex;
   flex-direction: column;
 }
+nav .header {
+  background-color: #ff6f6f;
+}
 nav .header .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-  background-color: #ff6f6f;
 }
 nav .header .nav-items {
   color: white;
@@ -25,15 +24,17 @@ nav .header .nav-items:hover {
   transition: all 0.4s;
 }
 nav .Group {
+  max-width: 1200px;
+  margin: 2.5% auto;
   display: flex;
   justify-content: space-between;
-  margin: 3% 5% 3% 5%;
 }
 nav .Group .logo {
   text-decoration: none;
   color: #ff6f6f;
   font-size: 2em;
   font-weight: bold;
+  width: 22vw;
 }
 nav .Group .search-area {
   display: flex;
@@ -57,11 +58,14 @@ nav .Group .search-area .search-box button {
 nav .Group .search-area .search-box button i {
   color: #ffffff;
 }
-nav .bottom .nav-container {
-  padding: 0;
-  margin: 0;
-  display: flex;
+nav .bottom {
   border-bottom: 2px solid #ff6f6f;
+}
+nav .bottom .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
 }
 nav .bottom .nav-container .nav-items {
   text-decoration: none;
@@ -74,6 +78,11 @@ nav .bottom .nav-container .nav-items {
 nav .bottom .nav-container .nav-items:hover {
   background-color: #ff6f6f;
   color: white;
+}
+
+.ShowArea {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .Quest_View .Title {

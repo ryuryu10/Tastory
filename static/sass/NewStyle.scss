@@ -7,20 +7,17 @@ $DARK_BASIC_COLOR: #e65e5e;
   border-radius: 50%;
 }
 
-
-body { 
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 nav {
   display: flex;
   flex-direction: column;
   .header {
+    background-color: $BASIC_COLOR;
     .nav-container{
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       justify-content: flex-end;
-      background-color: $BASIC_COLOR;
+
     }
     .nav-items{
       color: white;
@@ -35,14 +32,16 @@ nav {
     }
   }
   .Group {
+    max-width: 1200px;
+    margin: 2.5% auto;
     display: flex;
     justify-content: space-between;
-    margin: 3% 5% 3% 5%;
     .logo {
       text-decoration: none;
       color: $BASIC_COLOR;
       font-size: 2em;
       font-weight: bold;
+      width: 22vw;
     }
     .search-area {
       display: flex;
@@ -68,11 +67,12 @@ nav {
     }
   }
   .bottom{
+    border-bottom: 2px solid $BASIC_COLOR;
     .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
       padding: 0;
-      margin: 0;
       display: flex;
-      border-bottom: 2px solid $BASIC_COLOR;
       .nav-items {
         text-decoration: none;
         list-style: none;
@@ -87,6 +87,11 @@ nav {
       }
     }
   }
+}
+
+.ShowArea{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .Quest_View {
