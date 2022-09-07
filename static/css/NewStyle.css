@@ -309,6 +309,24 @@ nav .bottom .nav-container .nav-items:hover {
 .Book_Info .BookHeader ._Info ._B div {
   margin: 0 1.5%;
 }
+.Book_Info .UserReview {
+  border: 1px solid black;
+  padding: 1em;
+}
+.Book_Info .UserReview ._Name {
+  font-size: 1.1em;
+}
+.Book_Info .UserReview ._One {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.Book_Info .UserReview ._Full {
+  border-top: 1px solid black;
+  padding-top: 2em;
+  font-size: 1.3em;
+}
 
 @media screen and (min-width: 768px) {
   /* 타블렛 */
