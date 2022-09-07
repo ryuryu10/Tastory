@@ -294,7 +294,7 @@ nav {
     }
   }
 }
-.Book_Info {
+.ReviewDetail {
   .BookHeader {
     justify-content: center;
     display: flex;
@@ -383,6 +383,56 @@ nav {
       justify-content: center;
       align-items: center;
       font-size: 1.5em;
+    }
+  }
+}
+.Book_Info {
+  .BookHeader {
+    justify-content: center;
+    display: flex;
+    margin: 3em 0;
+    .BookImage {
+      width: 200px;
+    }
+    ._Info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 2em;
+      ._H{
+        div:not(._Title) {
+          color: #696969;
+        }
+        ._Title {
+          font-size: 2em;
+          font-weight: bold;
+          max-width: 800px;
+        }
+      }
+      ._B{
+        display: flex;
+        justify-content: space-between;
+        ._L {
+          display: flex;
+          span {
+            margin-right: 10px;
+          }
+        }
+        .WriteReview {
+          border: none;
+          border-radius: 25px;
+          background-color: $BASIC_COLOR;
+          color: white;
+          padding: 0.5em 2em 0.5em 2em;
+          transition: all 0.3s;
+          &:hover{
+            background-color: #c44f4f;
+          }
+          &:active{
+            background-color: #712c2c;
+          }  
+        }
+      }
     }
   }
 }

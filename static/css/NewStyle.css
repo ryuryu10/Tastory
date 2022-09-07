@@ -281,6 +281,95 @@ nav .bottom .nav-container .nav-items:hover {
   text-overflow: ellipsis;
 }
 
+.ReviewDetail .BookHeader {
+  justify-content: center;
+  display: flex;
+  margin: 3em 0;
+}
+.ReviewDetail .BookHeader .BookImage {
+  width: 200px;
+}
+.ReviewDetail .BookHeader ._Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2em;
+}
+.ReviewDetail .BookHeader ._Info ._H div:not(._Title) {
+  color: #696969;
+}
+.ReviewDetail .BookHeader ._Info ._H ._Title {
+  font-size: 2em;
+  font-weight: bold;
+  max-width: 800px;
+}
+.ReviewDetail .BookHeader ._Info ._B {
+  display: flex;
+}
+.ReviewDetail .BookHeader ._Info ._B div {
+  margin: 0 1.5%;
+}
+.ReviewDetail .UserReview {
+  border: 2px solid #e65e5e;
+  border-radius: 5px;
+  padding: 1em;
+}
+.ReviewDetail .UserReview ._Name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.ReviewDetail .UserReview ._One {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.ReviewDetail .UserReview ._Full {
+  border-top: 2px solid #e65e5e;
+  padding-top: 2em;
+  font-size: 1.3em;
+}
+.ReviewDetail .PurshaeView {
+  margin-top: 1.5em;
+  border: 2px solid #e65e5e;
+  border-radius: 5px;
+  padding: 1em;
+}
+.ReviewDetail .PurshaeView .Title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.ReviewDetail .PurshaeView .ShowAlert {
+  height: 7em;
+  margin-top: 1em;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.ReviewDetail .WriteReview {
+  margin-top: 1.5em;
+  border: 2px solid #e65e5e;
+  border-radius: 5px;
+  padding: 1em;
+}
+.ReviewDetail .WriteReview .Title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.ReviewDetail .WriteReview .ShowAlert {
+  height: 4em;
+  margin-top: 1em;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
 .Book_Info .BookHeader {
   justify-content: center;
   display: flex;
@@ -305,69 +394,27 @@ nav .bottom .nav-container .nav-items:hover {
 }
 .Book_Info .BookHeader ._Info ._B {
   display: flex;
+  justify-content: space-between;
 }
-.Book_Info .BookHeader ._Info ._B div {
-  margin: 0 1.5%;
-}
-.Book_Info .UserReview {
-  border: 2px solid #e65e5e;
-  border-radius: 5px;
-  padding: 1em;
-}
-.Book_Info .UserReview ._Name {
-  font-weight: bold;
-  font-size: 1.1em;
-}
-.Book_Info .UserReview ._One {
-  margin: 1em 0;
-  text-align: center;
-  font-size: 1.7em;
-  font-weight: bold;
-}
-.Book_Info .UserReview ._Full {
-  border-top: 2px solid #e65e5e;
-  padding-top: 2em;
-  font-size: 1.3em;
-}
-.Book_Info .PurshaeView {
-  margin-top: 1.5em;
-  border: 2px solid #e65e5e;
-  border-radius: 5px;
-  padding: 1em;
-}
-.Book_Info .PurshaeView .Title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.Book_Info .PurshaeView .ShowAlert {
-  height: 7em;
-  margin-top: 1em;
-  background-color: #dfdfdf;
-  border-radius: 10px;
+.Book_Info .BookHeader ._Info ._B ._L {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
 }
-.Book_Info .WriteReview {
-  margin-top: 1.5em;
-  border: 2px solid #e65e5e;
-  border-radius: 5px;
-  padding: 1em;
+.Book_Info .BookHeader ._Info ._B ._L span {
+  margin-right: 10px;
 }
-.Book_Info .WriteReview .Title {
-  font-size: 1.5em;
-  font-weight: bold;
+.Book_Info .BookHeader ._Info ._B .WriteReview {
+  border: none;
+  border-radius: 25px;
+  background-color: #ff6f6f;
+  color: white;
+  padding: 0.5em 2em 0.5em 2em;
+  transition: all 0.3s;
 }
-.Book_Info .WriteReview .ShowAlert {
-  height: 4em;
-  margin-top: 1em;
-  background-color: #dfdfdf;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
+.Book_Info .BookHeader ._Info ._B .WriteReview:hover {
+  background-color: #c44f4f;
+}
+.Book_Info .BookHeader ._Info ._B .WriteReview:active {
+  background-color: #712c2c;
 }
 
 @media screen and (min-width: 768px) {

@@ -6,7 +6,38 @@
 {% block content %}
 
 <div class="Book_Info">
-    <div class="container px-0">
+    <div class="BookHeader">
+        <img class="BookImage" src="{{ book.img_url }}">
+        <div class="_Info">
+            <div class="_H">
+                <div class="_Title">{{ book.title }}</div>
+                <div class="_Author">{{ book.author }}</div>
+                <div class="_Publisher">{{ book.publisher }}</div>
+            </div>
+            <div class="_B">
+                <div class="_L">
+                    <span class="heart">
+                        <i class="bi bi-suit-heart-fill"></i>
+                        378
+                    </span>
+                    <span class="view">
+                        <i class="bi bi-eye-fill"></i>
+                        102
+                    </span>
+                    <span class="bookmark">
+                        <i class="bi bi-bookmarks-fill"></i>
+                        241
+                    </span>
+                </div>
+                <button class="WriteReview">리뷰 작성하기</button>
+            </div>
+        </div>
+    </div>
+    <div class="BookDescription">
+        {{ book.book_info }}
+    </div>
+</div>
+    <!-- <div class="container px-0">
         <div class="flex-row">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <img src="{{ book.img_url }}" class="img-fluid" style="width: 200px;">
@@ -67,7 +98,7 @@
             </div>
             <div class="col-sm-12 col-md-1 col-lg-1"></div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 
