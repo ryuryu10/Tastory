@@ -1,9 +1,10 @@
 $BASIC_COLOR: #ff6f6f;
+$DARK_BASIC_COLOR: #e65e5e;
+
 @mixin CircleImage($Height, $Width) {
   width: $Height;
   height: $Width;
   border-radius: 50%;
- 
 }
 
 
@@ -267,7 +268,6 @@ nav {
       transition: all 0.3s;
       &:hover {
         background: #eeeeee;
-        
       }
       img {
         width: 10vw;
@@ -326,9 +326,11 @@ nav {
     }
   }
   .UserReview {
-    border: 1px solid black;
+    border: 2px solid $DARK_BASIC_COLOR;
+    border-radius: 5px;
     padding: 1em;
     ._Name {
+      font-weight: bold;
       font-size: 1.1em;
     }
     ._One {
@@ -338,9 +340,49 @@ nav {
       font-weight: bold;
     }
     ._Full {
-      border-top: 1px solid black;
+      border-top: 2px solid $DARK_BASIC_COLOR;
       padding-top: 2em;
       font-size: 1.3em;
+    }
+  }
+  .PurshaeView {
+    margin-top: 1.5em;
+    border: 2px solid $DARK_BASIC_COLOR;
+    border-radius: 5px;
+    padding: 1em;
+    .Title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .ShowAlert {
+      height: 7em;
+      margin-top: 1em;
+      background-color: #dfdfdf;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+    }
+  }
+  .WriteReview {
+    margin-top: 1.5em;
+    border: 2px solid $DARK_BASIC_COLOR;
+    border-radius: 5px;
+    padding: 1em;
+    .Title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .ShowAlert {
+      height: 4em;
+      margin-top: 1em;
+      background-color: #dfdfdf;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
     }
   }
 }
