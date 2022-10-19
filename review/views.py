@@ -4,7 +4,6 @@ from .models import Review, Book
 from common.models import User, Profile
 from .forms import ReviewForm
 
-
 @login_required
 def write(request):
     if request.method == 'POST':
@@ -28,7 +27,6 @@ def write(request):
         }
         return render(request, 'review/review_form.html', context)
 
-
 def detail(request, review_id):
     user = {}
     profile = {}
@@ -38,7 +36,7 @@ def detail(request, review_id):
     review = get_object_or_404(Review, review_id=review_id)
     book = Book.objects.get(book_id=review.book_id)
     review_user = User.objects.get(user_id=review.user_id)
-    profile = Profile.objects.get(user_id=user.user_id)
+    profile = User.objects.get(user_id=user.user_id)
     context = {'review': review, 'book': book,
                'review_user': review_user, 'user': user, 'profile': profile}
     return render(request, 'review/review_detail.html', context)
@@ -64,7 +62,6 @@ def edit(request, review_id):
             'profile': profile
         }
         return render(request, 'review/review_update_form.html', context)
-
 
 def main(request):
     books = list(Book.objects.all().values())
@@ -114,7 +111,6 @@ def search(request):
     }
     return render(request, 'review/search.html', context)
 
-
 def bookinfo(request, book_id):
     book = get_object_or_404(Book, book_id=book_id)
     if request.method == 'POST':
@@ -153,7 +149,6 @@ def bookinfo(request, book_id):
             'review_user_profile_list': review_user_profile_list
         }
         return render(request, 'review/book_info.html', context)
-
 
 def library(request, user_id):
     user = User.objects.get(user_id=user_id)
