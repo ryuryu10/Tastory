@@ -80,6 +80,51 @@ nav .bottom .nav-container .nav-items:hover {
   color: white;
 }
 
+.nav_overlay {
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.337254902);
+}
+.nav_overlay .layout {
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+.nav_overlay .layout p {
+  color: black;
+  margin: 0px;
+}
+.nav_overlay .layout ._Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_overlay .layout ._Title .LOGO {
+  color: #ff6f6f;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 22vw;
+  margin: 0.3em 0.5em 0.3em 0.5em;
+}
+.nav_overlay .layout ._Title i {
+  padding-right: 0.2em;
+  font-size: 2.5em;
+}
+.nav_overlay .layout hr {
+  margin: 0.3em;
+}
+.nav_overlay .layout .Article {
+  margin: 1em 10em 1em 1em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
 .ShowArea {
   max-width: 1200px;
   margin: 0 auto;

@@ -89,6 +89,51 @@ nav {
   }
 }
 
+.nav_overlay {
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000056;
+  .layout {
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    p {
+      color: black;
+      margin: 0px;
+    }
+    ._Title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .LOGO {
+        color: $BASIC_COLOR;
+        font-size: 1.5em;
+        font-weight: bold;
+        width: 22vw;
+        margin: 0.3em 0.5em 0.3em 0.5em;
+      }
+      i {
+        padding-right: 0.2em;
+        font-size: 2.5em;
+      }
+    }
+    hr {
+      margin: 0.3em;
+    }
+    .Article {
+      margin: 1em 10em 1em 1em;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+  }
+}
+
 .ShowArea{
   max-width: 1200px;
   margin: 0 auto;
