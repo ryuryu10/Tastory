@@ -121,6 +121,14 @@ nav {
       i {
         padding-right: 0.2em;
         font-size: 2.5em;
+        transition: all 0.3s;
+        color: #808080;
+          &:hover {
+            color: #2c2c2c;
+          }
+          &:active {
+            color: #2c2c2c;
+          }
       }
     }
     hr {

@@ -115,6 +115,14 @@ nav .bottom .nav-container .nav-items:hover {
 .nav_overlay .layout ._Title i {
   padding-right: 0.2em;
   font-size: 2.5em;
+  transition: all 0.3s;
+  color: #808080;
+}
+.nav_overlay .layout ._Title i:hover {
+  color: #2c2c2c;
+}
+.nav_overlay .layout ._Title i:active {
+  color: #2c2c2c;
 }
 .nav_overlay .layout hr {
   margin: 0.3em;
