@@ -71,12 +71,17 @@ nav .bottom .nav-container .nav-items {
   text-decoration: none;
   list-style: none;
   padding: 0.5em 1em 0.5em 1em;
-  color: #ff6f6f;
   font-weight: bold;
   transition: all 0.4s;
 }
+nav .bottom .nav-container .nav-items a {
+  text-decoration: none;
+  color: #ff6f6f;
+}
 nav .bottom .nav-container .nav-items:hover {
   background-color: #ff6f6f;
+}
+nav .bottom .nav-container .nav-items:hover a {
   color: white;
 }
 

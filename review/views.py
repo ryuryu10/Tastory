@@ -36,7 +36,7 @@ def detail(request, review_id):
     review = get_object_or_404(Review, review_id=review_id)
     book = Book.objects.get(book_id=review.book_id)
     review_user = User.objects.get(user_id=review.user_id)
-    profile = User.objects.get(user_id=user.user_id)
+    #profile = User.objects.get(user_id=user.user_id)
     context = {'review': review, 'book': book,
                'review_user': review_user, 'user': user, 'profile': profile}
     return render(request, 'review/review_detail.html', context)
@@ -77,7 +77,6 @@ def main(request):
         review_user = User.objects.get(user_id=review.user_id)
         review_profile = Profile.objects.get(user_id=review_user.user_id)
         book_image = Book.objects.get(book_id=review.book_id)
-        print(book_image)
         review_user_profile_match = {
             'review': review, 'user': review_user, 'profile': review_profile,'book_img': book_image}
         review_user_profile_list.append(review_user_profile_match)
@@ -88,7 +87,6 @@ def main(request):
         'profile': profile,
         'bookGrouping' : bookGrouping
     }
-    print(review_user_profile_list)
     return render(request, 'review/index.html',  context)
 
 

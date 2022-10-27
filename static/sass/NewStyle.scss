@@ -74,15 +74,21 @@ nav {
       padding: 0;
       display: flex;
       .nav-items {
+        a{
+          text-decoration: none;
+          color: $BASIC_COLOR;
+        }
         text-decoration: none;
         list-style: none;
         padding: 0.5em 1em 0.5em 1em;
-        color: $BASIC_COLOR;
+        
         font-weight: bold;
         transition: all 0.4s;
         &:hover {
           background-color: $BASIC_COLOR;
-          color: white;
+          a{
+            color: white;
+          }
         }
       }
     }
